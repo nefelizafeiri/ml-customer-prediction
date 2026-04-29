@@ -40,9 +40,15 @@ Place `train.csv` and `test.csv` in the repository root before running.
 ## Run It
 
 ```bash
-pip install pandas numpy xgboost shap scikit-learn matplotlib seaborn
+pip install -r requirements.txt
 jupyter notebook Final_Code.ipynb
 ```
+
+### Note: originally developed in Google Colab
+
+The notebooks include `from google.colab import files` and use Colab's file-upload
+widget for the input CSVs. To run locally, replace any `files.upload()` calls
+with a direct `pd.read_csv("train.csv")` after placing the data in the repo root.
 
 ## Files
 
